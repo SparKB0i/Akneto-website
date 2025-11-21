@@ -1,0 +1,365 @@
+/* ========================================
+   ABOUT PAGE STYLES
+   ======================================== */
+
+/* ========================================
+   STORY SECTION
+   ======================================== */
+
+.story-section {
+    padding: var(--space-16) 0;
+    background: var(--bg-primary);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-10);
+    align-items: center;
+}
+
+.story-image {
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.story-image:hover img {
+    transform: scale(1.05);
+}
+
+.story-content {
+    padding: var(--space-6);
+}
+
+.story-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-6);
+}
+
+.story-text {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+}
+
+.story-text:last-child {
+    margin-bottom: 0;
+}
+
+/* ========================================
+   MISSION & VISION SECTION
+   ======================================== */
+
+.mission-section {
+    padding: var(--space-16) 0;
+    background: var(--bg-secondary);
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+}
+
+.mission-card {
+    padding: var(--space-8);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-2xl);
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+.mission-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--brand-blue);
+}
+
+.mission-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto var(--space-6);
+    border-radius: var(--radius-full);
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.mission-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-4);
+}
+
+.mission-description {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin: 0;
+}
+
+/* ========================================
+   VALUES SECTION
+   ======================================== */
+
+.values-section {
+    padding: var(--space-16) 0;
+    background: var(--bg-primary);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-12);
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-5xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-4);
+}
+
+.section-subtitle {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin: 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-6);
+}
+
+.value-card {
+    padding: var(--space-6);
+    text-align: center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-base);
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.value-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto var(--space-4);
+    border-radius: var(--radius-full);
+    background: var(--bg-primary);
+    color: var(--brand-blue);
+    border: 2px solid var(--border-subtle);
+}
+
+.value-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.value-description {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin: 0;
+}
+
+/* ========================================
+   ABOUT STATS SECTION
+   ======================================== */
+
+.about-stats-section {
+    padding: var(--space-16) 0;
+    background: var(--gradient-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-stats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="1.5" fill="rgba(255,255,255,0.2)"/></svg>');
+    opacity: 0.4;
+}
+
+.about-stats-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-8);
+}
+
+.about-stat {
+    text-align: center;
+    color: white;
+}
+
+.about-stat-number {
+    font-family: var(--font-heading);
+    font-size: var(--text-6xl);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: var(--space-3);
+}
+
+.about-stat-label {
+    font-size: var(--text-lg);
+    font-weight: 500;
+    opacity: 0.95;
+}
+
+/* ========================================
+   RESPONSIVE BREAKPOINTS
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .story-section,
+    .mission-section,
+    .values-section,
+    .about-stats-section {
+        padding: var(--space-10) 0;
+    }
+
+    .story-title,
+    .section-title {
+        font-size: var(--text-3xl);
+    }
+
+    .mission-title {
+        font-size: var(--text-2xl);
+    }
+
+    .story-text,
+    .mission-description,
+    .section-subtitle {
+        font-size: var(--text-base);
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    .about-stat-number {
+        font-size: var(--text-5xl);
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .mission-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .value-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .value-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .about-stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   DARK MODE ADJUSTMENTS
+   ======================================== */
+
+[data-theme="dark"] .mission-card,
+[data-theme="dark"] .value-card {
+    background: var(--bg-tertiary);
+    border-color: var(--border-normal);
+}
+
+[data-theme="dark"] .mission-card:hover,
+[data-theme="dark"] .value-card:hover {
+    background: var(--bg-secondary);
+    border-color: var(--brand-blue);
+}
+
+[data-theme="dark"] .value-icon {
+    background: var(--bg-secondary);
+    border-color: var(--border-normal);
+}
+
+[data-theme="dark"] .mission-section {
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .values-section {
+    background: var(--bg-primary);
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .story-image img,
+    .mission-card,
+    .value-card {
+        transition: none !important;
+        transform: none !important;
+    }
+}

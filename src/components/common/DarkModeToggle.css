@@ -1,0 +1,65 @@
+/* Dark Mode Toggle Styles */
+
+.dark-mode-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border-normal);
+    border-radius: var(--radius-full);
+    background: var(--bg-secondary);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.dark-mode-toggle:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--brand-blue);
+    transform: scale(1.05);
+}
+
+.dark-mode-toggle:active {
+    transform: scale(0.95);
+}
+
+.icon-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all var(--transition-base);
+    color: var(--text-primary);
+}
+
+.icon.sun {
+    animation: rotateIn 0.5s ease-out;
+}
+
+.icon.moon {
+    animation: rotateIn 0.5s ease-out;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-180deg) scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Accessibility */
+.dark-mode-toggle:focus-visible {
+    outline: 2px solid var(--brand-blue);
+    outline-offset: 2px;
+}
