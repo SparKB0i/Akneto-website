@@ -1,4 +1,4 @@
-# Deploying Akneto Redesign to Netlify
+# Deploying Akneto Website to Netlify
 
 This guide outlines the steps to deploy your React application to Netlify and configure a custom domain.
 
@@ -18,7 +18,7 @@ This method sets up continuous deployment. Every time you push to your Git repos
 3.  Click **"Add new site"** > **"Import an existing project"**.
 4.  Select your Git provider (e.g., GitHub).
 5.  Authorize Netlify to access your repositories.
-6.  Search for and select your `akneto-redesign` repository.
+6.  Search for and select your `akneto-website` repository.
 7.  **Configure Build Settings:**
     - **Base directory:** `akneto-redesign` (Since your project is in a subdirectory)
     - **Build command:** `npm run build`

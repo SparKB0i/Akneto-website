@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Akneto Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, high-performance website for Akneto, an innovative IT solutions company. This project features a premium, responsive design with dynamic animations and a seamless user experience.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+-   **Modern UI/UX:** Sleek design with glassmorphism effects, vibrant gradients, and smooth transitions.
+-   **Responsive Design:** Fully optimized for desktops, tablets, and mobile devices.
+-   **Dark Mode:** Built-in dark mode support for better accessibility and user preference.
+-   **Dynamic Animations:** Powered by **Framer Motion** and **Anime.js** for engaging visual effects.
+-   **Multi-Page Layout:** comprehensive pages including Home, About, Services, Products, Careers, Blog, and Contact.
+-   **Interactive Elements:** Custom hover effects, animated counters, and client-side form validation.
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   **Frontend Framework:** [React](https://reactjs.org/)
+-   **Routing:** [React Router](https://reactrouter.com/)
+-   **Styling:** [Bootstrap 5](https://getbootstrap.com/), [React Bootstrap](https://react-bootstrap.github.io/), and custom CSS variables.
+-   **Icons:** [React Icons](https://react-icons.github.io/react-icons/) (Lucide, FontAwesome, etc.)
+-   **Animations:** [Framer Motion](https://www.framer.com/motion/) & [Anime.js](https://animejs.com/)
+-   **Deployment:** Netlify
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation & Running Locally
 
-### `npm test`
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/SparKB0i/Akneto-website.git
+    cd akneto-redesign
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-### `npm run build`
+3.  **Start the development server:**
+    ```bash
+    npm start
+    ```
+    The app will run at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4.  **Build for production:**
+    ```bash
+    npm run build
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is configured for deployment on **Netlify**.
 
-### `npm run eject`
+For detailed deployment instructions, including how to set up a custom domain, please refer to [DEPLOYMENT.md](./DEPLOYMENT.md).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Quick Netlify Setup
+1.  Connect your repository to Netlify.
+2.  Set the **Build Command** to `npm run build`.
+3.  Set the **Publish Directory** to `build`.
+4.  (Optional) The `netlify.toml` file in the root handles redirects for SPA routing automatically.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📂 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+akneto-redesign/
+├── public/             # Static assets
+├── src/
+│   ├── components/     # Reusable components (Navbar, Footer, Hero, etc.)
+│   ├── pages/          # Page components (Home, About, Services, etc.)
+│   ├── hooks/          # Custom React hooks
+│   ├── styles/         # Global styles and design system
+│   ├── utils/          # Utility functions
+│   ├── App.js          # Main application component
+│   └── index.js        # Entry point
+├── netlify.toml        # Netlify configuration
+└── README.md           # Project documentation
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📄 License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
